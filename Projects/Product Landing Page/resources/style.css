@@ -1,0 +1,259 @@
+/*-------- Materials Used ---------*/
+
+/*
+lighter version:7cbde8;
+Main color:#3498db;
+darker version:#2487c9;
+
+*/
+
+
+        /*------------------------------***********************----------------------------------*/
+      
+/*-------- Basic Setup -----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+    color: #505050;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+section{
+    
+    height: 100vh;
+    max-width: 100%;
+}
+
+         /*------------------------------***********************----------------------------------*/
+
+/*-------- Section-1 -----------*/
+
+.section-1{
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/hero.jpg);
+    background-size: cover;
+}
+
+#header {
+    position: fixed;
+    height: 20vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+    display: flex;
+}   
+
+.logo{
+    
+    max-height: 100%;
+    max-width: 100%;
+    padding: 10px 0 10px 5px; 
+    margin-left: 20px;
+}
+
+
+ul{
+    
+    margin: 7vh 0;
+    margin-left: 680px;    
+}
+
+ul li{
+    
+    display: inline-block;
+    font-size: 140%;
+    color: white;
+    margin-right: 5vh;
+}
+
+ul li:hover{
+    
+    padding-bottom: 5px;
+    animation-name: hover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hover{
+    
+    from{border-bottom: 1px solid #7cbde8;}
+    to{border-bottom: 1px solid #2487c9;}
+}
+
+h1{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-25%);
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 240%;
+    color:rgba(255, 255, 255, 0.85);
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 55px;
+}
+
+form{
+    
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    margin-top: 10px;
+}
+
+input[type=email]:placeholder-shown,input[type=submit]{
+    
+    font-size: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-right: 30px;
+    padding: 5px;
+    color: #000;
+    height: 34px;
+}
+
+input[type=submit]{
+    
+    font-size: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #2487c9;
+    border: none;
+    height: auto;
+    width: 100px;
+    color:white;
+}
+
+input[type=submit]:hover{
+    
+    transform: scale(1.05);
+    
+}
+
+      /*------------------------------***********************----------------------------------*/
+
+/*-------- Section-2 -----------*/
+
+/* Repeated For Section 2 and 3 */
+
+.section-2,.section-3{    
+    padding-top: 180px;
+    margin: 0 auto;
+    width: 1140px;
+}
+
+/* --------------*------------- */
+
+h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+}
+
+.sub-heading::after{
+    
+    display: block;
+    height: 2px;
+    max-width: 10%;
+    content: " ";
+    background-color: #2487c9;
+    margin: 10px auto 10px auto;
+}
+
+.super-sub-heading{
+    max-width: 1140px;
+    height: auto;
+    margin: 0px auto 0 auto;
+    text-align: center;
+
+}
+.F-paragraphs{
+    
+    display: flex;
+    margin-top: 50px;
+}
+
+h4{
+    font-weight: 400; 
+}
+
+.F-para-1,.F-para-2,.F-para-3,.F-para-4{
+    margin: 0 15px;  
+ 
+ 
+}
+.icon{
+    
+    font-size: 200%;
+    color: #3498db;
+    
+}
+
+.para-content{
+    font-size: 95%;
+}
+
+.content-3{
+    margin-top: px; 
+}
+
+        /*------------------------------***********************----------------------------------*/
+
+/*-------- Section-3 -----------*/
+
+.content-3{
+    padding-top: 20px;
+    height: 90%;
+    display: flex;
+    flex-grow: 
+}
+
+#video{
+    
+    height: 100%;
+    width: 100%;
+    padding-right:40px ;
+}
+
+.video{
+    
+    width: 140%;
+    
+}
+
+.content-list{
+
+    height: 100%;
+    font-size: 125%;
+    font-weight: 300;
+
+}
+.video-heading,.content-heading{
+    
+    font-size: 25px;    
+    padding-bottom: 10px;
+}
+
+ /*------------------------------***********************----------------------------------*/
+
+/*-------- Media Queries -----------*/
+
+@media(max-width: 650px){   
+    .content-list  {
+    font-size:80%;
+}
+
+        /*------------------------------***********************----------------------------------*/
+    

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/style.css" type="text/css"> 
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <title>Feedback Form</title>
+</head>
+<body>
+<main class="row">
+
+<!-- Heading -->
+<div class="heading">
+<h1 id="title">Feedback Form</h1>
+
+<!-- Sub Heading -->
+<p id="description">(Help me to improve my work by filling this form)</p>
+
+</div>
+<!-- Main Form -->
+
+<form action="#" id="survey-form">
+
+<label for="" id="name-label">
+*Name: <input id="name" type="text" required placeholder="Name">
+</label>
+
+<br>
+<br>
+
+<label for="" id="email-label">
+*E-Mail: <input id="email" type="email" required placeholder="E-Mail">
+</label>
+
+<br>
+<br>
+
+
+<label for="" id="number-label">
+Age: <input id="number" type="number" max="100" min="1" required placeholder="Age">
+</label>
+
+<br>
+<br>
+    
+<label for="" id="dropdown-label">Which option best describes your current role?
+<select class="dropdown" name="role" id="dropdown">
+<option value="" class="option-1">Student</option>
+<option value="" class="option-2">Full Time Job</option>
+<option value="" class="option-3">Full Time Learner</option>
+<option value="" class="option-4">Teacher</option>
+<option value="" class="option-5">Other</option>        
+</select>
+</label>
+
+<br>
+<br>
+
+<label for="" id="radio-label">How much do you like my work ? 
+<ul class="radio">
+
+    <li><label for=""><input type="radio" name="rating" value="Below Average"> Below Average</label></li>
+    <li><label for=""><input type="radio" name="rating" value=" Average"> Average</label></li>
+    <li><label for=""><input type="radio" name="rating" value="Good"> Good</label></li>
+    <li><label for=""><input type="radio" name="rating" value="Very Good"> Very Good</label></li>
+    <li><label for=""><input type="radio" name="rating" value="Excellent"> Excellent</label></li>
+    
+</ul> 
+</label>
+
+<br>
+<br>
+
+<label for="" id="checkbox-label">Things that should be improved in the future<br>
+(Check all that apply):
+<ul class="checkbox">
+
+   <li><label for=""><input type="checkbox" name="improvements" value="Design"> Design</label></li>  
+   <li><label for=""><input type="checkbox" name="improvements" value="Fonts"> Fonts</label></li>
+   <li><label for=""><input type="checkbox" name="improvements" value="Images"> Images</label></li>
+   <li><label for=""><input type="checkbox" name="improvements" value="Backgrounds"> Backgrounds</label></li> 
+   <li><label for=""><input type="checkbox" name="improvements" value="Content"> Content</label> </li>
+   
+</ul>
+</label>
+
+<br>
+<br>
+
+<label for="" id="comments-label">Any Comments or Suggestions?
+<textarea class="textarea" name="" id="" cols="40" rows="5"></textarea>    
+</label>
+
+<br>
+<br>
+
+<button type="submit" id="submit"><p>Submit</p></button>
+
+</form>           
+</main>   
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

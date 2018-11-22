@@ -1,0 +1,166 @@
+/*------------------------*/
+/* Basic Setup */
+/*------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    font-family: "lato",sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+.row{
+    
+    margin: 0 auto;
+    max-width: 1140px;
+    height: auto;
+    border: 2px solid black;
+    background: white;
+}
+
+/*------------------------*/
+/* Heading Setup */
+/*------------------------*/
+
+.heading{
+    
+    padding: 2% 0;
+    height: auto;
+    background: #0BA8EE;
+    color: white;
+}
+
+#title,#description{
+    margin: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 400;    
+}
+
+#description{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/*------------------------*/
+/* Form Setup */
+/*------------------------*/
+
+#survey-form{
+    margin-top: 10px;
+    padding-left: 4px;    
+}
+
+ul{
+    list-style: none;
+}
+
+#name-label,#email-label,#number-label,#dropdown-label,#radio-label,#checkbox-label,#comments-label{
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    right: 500px;
+}
+
+#number-label{
+    right: 590px;
+    
+}
+
+::placeholder{
+    font-size: 15px;
+    font-family: "lato",sans-serif;
+}
+
+#dropdown-label,#radio-label,#checkbox-label{    
+    right: 530px;
+}
+
+#name,#age,#email,.dropdown,.radio,.checkbox{
+    margin-left: 15px;
+    height: auto;    
+}
+
+.radio{
+    position: relative;
+    left: 11px;
+}
+
+#comments-label{ 
+    right: 330px;
+}
+
+.textarea{
+    position: relative;
+    left: 15px;   
+}
+
+#submit{
+    display: grid;
+    margin: 0 60% 0 40%;
+    width: auto;
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+                          </*-----------------END--------------------*/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

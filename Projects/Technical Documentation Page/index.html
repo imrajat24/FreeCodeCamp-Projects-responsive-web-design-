@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <title>Technical Documnentation Page</title>
+</head>
+<body>    
+<main id="main-doc">
+
+<!-- Navigation Bar -->    
+
+<nav id="navbar">
+<header>
+    <h2 class="main-heading">HTML Documentation</h2>
+    <hr>
+</header>    
+<ul>
+<a class="nav-link" href="#Introduction" rel="internal"><li><h3>Introduction</h3></li></a>
+<a class="nav-link" href="#Doc_types" rel="internal"><li><h3>Doc Types</h3></li></a>
+<a class="nav-link" href="#Lists" rel="internal"><li><h3>Lists</h3></li></a>
+<a class="nav-link" href="#Tables" rel="internal"><li><h3>Tables</h3></li></a>
+<a class="nav-link" href="#HTML_with_css" rel="internal"><li><h3>HTML with Css</h3></li></a>
+<a class="nav-link" href="#JS_in_html" rel="internal"><li><h3>JS in HTML</h3></li></a>
+<a class="nav-link" href="#Svg" rel="internal"><li><h3>Svg</h3></li></a>
+<a class="nav-link" href="#Comments" rel="internal"><li><h3>Comments</h3></li></a> 
+<a class="nav-link" href="#Div_elements" rel="internal"><li><h3>Div elements </h3></li></a>
+<a class="nav-link" href="#Classes" rel="internal"><li><h3>Classes</h3></li></a>
+<a class="nav-link" href="#Ids" rel="internal"><li><h3>Ids</h3></li></a>
+<a class="nav-link" href="#Character_entities" rel="internal"><li><h3>Character Entities</h3></li></a>
+</ul> 
+</nav> 
+
+<!-- Section-1 -->
+
+<div class="sections">
+
+<section class="main-section" id="Introduction">
+    <header><h4>Introduction</h4>
+    </header>
+<p>
+HTML (Hypertext Markup Language) uses a markup system composed of elements which represent specific
+content. Markup means that with HTML you declare what is presented to a viewer, not how it is presented. Visual representations are defined by Cascading Style Sheets (CSS) and realized by browsers. Still existing elements that allow for such, like e.g. font , "are entirely obsolete, and must not be used by authors".<br>HTML is sometimes called a programming language but it has no logic, so is a markup language.HTML tags
+provide semantic meaning and machine-readability to the content in the page.
+</p> 
+<p>An element usually consists of an opening tag ( &lt;element_name&gt; ), a closing tag ( &lt; &#47element_name&gt;), which contain the element's name surrounded by angle brackets, and the content in between:
+<code>
+&lt;element_name&gt;...content...&lt; &#47element_name&gt;
+</code>
+There are some HTML elements that don't have a closing tag or any contents. These are called <b>Void</b> elements. 
+</p>
+<p>A simple web page look like this</p>
+<code>
+<xmp>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello!</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>This is a simple paragraph.</p>
+</body>
+</html>    
+</xmp>    
+</code>
+</section>
+
+<!-- Section-2 -->
+ 
+<section class="main-section" id="Doc_types">
+    <header><h4>Doc Types</h4>
+    </header>
+<p>
+Doctypes - short for 'document type' - help browsers to understand the version of HTML the document is written in for better interpretability. Doctype declarations are not HTML tags and belong at the very top of a document.    
+</p>    
+<h5>Adding the Doctype</h5>
+<p>
+The <b>&lt;&#33;DOCTYPE&gt;</b> declaration should always be included at the top of the HTML document, before the &lt;html&gt; tag.</p>
+<h5>HTML 5 Doctype</h5>
+<p>
+HTML5 is not based on SGML (Standard Generalized Markup Language), and therefore does not require a reference to a DTD (Document Type Definition).<br>
+HTML 5 Doctype declaration:
+</p>
+<code>
+<xmp>
+<!DOCTYPE html>
+</xmp>
+</code>
+
+</section>
+
+<!-- Section-3 -->
+
+<section class="main-section" id="Lists">
+    <header><h4>Lists</h4>
+    </header>
+<p>
+    HTML offers three ways for specifying lists: ordered lists, unordered lists, and description lists. Ordered lists use ordinal sequences to indicate the order of list elements, unordered lists use a defined symbol such as a bullet to list elements in no designated order, and description lists use indents to list elements with their children. This topic explains the implementation and combination of these lists in HTML markup.
+</p>    
+<h5>Lists in HTML are generally of 4 types</h5>
+<ol>
+<li>Ordered List</li>
+<li>Unordered List</li>
+<li>Nested lists</li>
+<li>Description List</li>    
+</ol>
+<p>An Ordered list looks like this</p>
+<code>
+<xmp>
+<ol>
+<li>Item</li>
+<li>Another Item</li>
+<li>Yet Another Item</li>
+</ol>    
+</xmp>    
+</code>
+<p>An Unordered list looks like this</p>
+<code>
+<xmp>
+<ul>
+<li>Item</li>
+<li>Another Item</li>
+<li>Yet Another Item</li>
+</ul>   
+</xmp>    
+</code>
+</section>
+
+<!-- Section-4 -->
+
+<section class="main-section" id="Tables">
+    <header><h4>Tables</h4>
+    </header>
+<p>
+The HTML &lt;table&gt; element allows web authors to display tabular data (such as text, images, links, other tables etc.) in a two dimensional table with rows and columns of cells.    
+</p>    
+<h5>Tables in Html can be created using different ways</h5>
+<ol>
+<li>Simple Table</li>
+<li>Spanning columns or rows</li>
+<li>Column Groups</li>
+<li>Table with thead, tbody, tfoot, and caption</li>
+<li>Heading scope</li>     
+</ol>
+</section>
+
+<!-- Section-5 -->
+
+<section class="main-section" id="HTML_with_css">
+    <header><h4>HTML with Css</h4>
+    </header>
+<p>
+CSS provides styles to HTML elements on the page. Inline styling involves usage of the style attribute in tags, and is highly discouraged. Internal stylesheets use the &lt;style&gt; tag and are used to declare rules for directed portions of the page. External stylesheets may be used through a &lt;link&gt; tag which takes an external file of CSS and applies the rules to the document. This topic covers usage of all three methods of attachment.
+</p>    
+<p>You can use Css with Html intwo ways</p>
+<h5>External Stylesheet Use</h5>
+<p>Use the link attribute in the document's head :
+</p>
+<code>
+<xmp>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>   
+</xmp>    
+</code>
+<h5>Internal Stylesheet Use</h5>
+<p>You can also include CSS elements internally by using the &lt;style&gt; tag:
+</p>
+<code>
+<xmp>
+<head>
+<style type="text/css">
+body {
+background-color: gray;
+}
+</style>
+</head>   
+</xmp>    
+</code>
+</section>
+
+<!-- Section-6 -->
+
+<section class="main-section" id="JS_in_html">
+    <header><h4>JS in HTML</h4>
+    </header>
+<p>JavaScript can be included in two ways</p>
+<h5>Linking to an external JavaScript file</h5>
+<code>
+<xmp>
+<script src="example.js"></script>    
+</xmp>     
+</code>
+<p>
+The src attribute works like the href attribute on anchors: you can either specify an absolute or relative URL. The example above links to a file inside the same directory of the HTML document. This is typically added inside the &lt;head&gt; tags at the top of the html document.        
+</p>
+<h5>Directly including JavaScript code</h5>
+<p>Instead of linking to an external file, you can also include the JS code as-is in your HTML:</p>
+<code>
+<xmp>
+<script>
+// JavaScript code
+</script>
+</xmp>    
+</code>
+</section>
+
+<!-- Section-7 -->
+
+<section class="main-section" id="Svg">
+<header><h4>Svg</h4>
+</header>
+<p>
+SVG stands for Scalable Vector Graphics. SVG is used to define graphics for the Web. <br>
+The HTML &lt;svg&gt; element is a container for SVG graphics.<br>
+SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p>
+<p>SVG can be used in different ways</p>
+<ol>
+<li>Inline SVG</li>
+<li>Embedding external SVG files in HTML</li>
+<li>Embedding SVG using CSS</li>    
+</ol>
+</section>
+
+<!-- Section-8 -->
+
+<section class="main-section" id="Comments">
+<header><h4>Comments</h4>
+</header>
+<p>
+Similar to other programming, markup, and markdown languages, comments in HTML provide other developers
+with development specific information without affecting the user interface. Unlike other languages however, HTML comments can be used to specify HTML elements for Internet Explorer only. This topic explains how to write HTML comments, and their functional applications.
+</p>
+<p>HTML comments can be used to leave notes to yourself or other developers about a specific point in code. 
+</p>
+<code>
+    <xmp><!-- I'm an HTML comment! --></xmp>
+</code>
+</section>
+
+<!-- Section-9 -->
+
+<section class="main-section" id="Div_elements">
+    <header><h4>Div elements</h4>
+    </header>
+<p>The div element in HTML is a container element that encapsulates other elements and can be used to group and separate parts of a webpage. A div by itself does not inherently represent anything but is a powerful tool in web design. This topic covers the purpose and applications of the div element.</p>    
+<p>The &lt;div&gt; element usually has no specific semantic meaning by itself, simply representing a division, and is typically used for grouping and encapsulating other elements within an HTML document and separating those from other groups of content. As such, each &lt;div&gt; is best described by its contents </p>      
+</section>
+
+<!-- Section-10 -->
+
+<section class="main-section" id="Classes">
+    <header><h4>Classes</h4>
+    </header>
+<p>Classes and IDs make referencing HTML elements from scripts and stylesheets easier. The class attribute can be used on one or more tags and is used by CSS for styling. IDs however are intended to refer to a single element,meaning the same ID should never be used twice. IDs are generally used with JavaScript and internal document links, and are discouraged in CSS. This topic contains helpful explanations and examples regarding proper usage of class and ID attributes in HTML.</p>  
+</section>  
+
+<!-- Section-11 -->
+
+<section class="main-section" id="Ids">
+    <header><h4>Ids</h4>
+    </header>
+<p>The ID attribute of an element is an identifier which must be unique in the whole document. Its purpose is to uniquely identify the element when linking (using an anchor), scripting, or styling (with CSS).</p>    <code>
+<xmp>
+<div id="example-id"></div>    
+</xmp>    
+</code>
+<p>You should not have two elements with the same ID in the same document, even if the attributes are attached to two different kinds of elements. For example, the following code is incorrect:</p>
+<code>
+<xmp>
+<div id="example-id"></div>
+<span id="example-id"></span>
+</xmp>
+</code>
+</section> 
+   
+<!-- Section-12 -->
+
+<section class="main-section" id="Character_entities">
+    <header><h4>Character Entities</h4>
+    </header>
+<p>Many symbols and special characters are required while developing a web page in html, but as we know that sometimes the use of characters directly may interfere with the actual html code which have certain characters reserved and also certain characters being not available on keyboard. Thus, to avoid the conflict and at same time to be able to use different symbols in our code w3 org provides us with 'Character Entities'.</p>    
+<p>Character Entities are predefined with 'Entity Name' - &entity_name; and 'Entity Number' - &entity_number; so we need to use either of the two for the required symbol to be rendered on our page.
+<br>
+The list of few Character Entities can be found at <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">https://dev.w3.org/html5/html-author/charref</a>
+</p>
+<h5>Common Special Characters</h5>
+<img src="resources/css/img/img.png" alt="">
+</section>
+
+<!-- Sections End --> 
+       
+</div>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
